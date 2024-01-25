@@ -4,31 +4,53 @@
     box-sizing: border-box;
 }
 
+:root {
+    --hamburguer--icon: #000
+}
+
 body {
  font-family: 'Oswald', sans-serif;
+ 
 }
 
 .header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./img/s2.jpg");
     height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+   
 }
 
-.nav {
+nav {
     
-    width: 95%;
+    width: 99%;    
     height: 100px;
-    margin: 0 auto;
+    padding: 0 50px;
+    /* margin: 30px auto 30px auto; */  
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #FFF;
-    top: 30px;
-    padding: 0 30px;      
+  
+    
+}
+
+.header {
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
 }
 
 .ul {
    display: flex;
+   justify-content: center;
+   align-items: center;
     gap: 20px;
     list-style: none;
 }
@@ -38,3 +60,19 @@ a {
     color: #414040;
 }
 
+.hamburguer-icon {   
+    font-size: 30px;
+
+}
+
+/* Menu Hamburguer */
+
+.hamburguer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburguer-menu {
+    display: none;
+}
